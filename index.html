@@ -44,13 +44,39 @@
       height: 200px;
       border-radius: 10px;
     }
+    .animated-text {
+      font-size: 1.2em;
+      animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .payment-section {
+      background-color: #162c1e;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1 class="green">Expert Motion Agency</h1>
-  <p>প্রফেশনাল ভিডিও এডিটিং সার্ভিস — আজই যোগাযোগ করুন!</p>
+  <h1 class="green animated-text">Expert Motion Agency</h1>
+  <p class="animated-text">প্রফেশনাল ভিডিও এডিটিং সার্ভিস — আজই যোগাযোগ করুন!</p>
   <a href="#contact" class="btn">যোগাযোগ করুন</a>
 </header>
 
@@ -82,6 +108,19 @@
   <h2 class="green">যোগাযোগ করুন</h2>
   <p>📧 expertmotionagency@gmail.com</p>
   <p>📞 09606261696</p>
+
+  <form action="https://formsubmit.co/expertmotionagency@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="আপনার নাম" required>
+    <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+    <textarea name="message" placeholder="আপনার মেসেজ/প্রজেক্ট ডিটেইলস" required></textarea>
+    <button type="submit" class="btn">ফর্ম জমা দিন</button>
+  </form>
+</section>
+
+<section class="payment-section">
+  <h2 class="green">পেমেন্ট তথ্য</h2>
+  <p>📱 বিকাশ নম্বর: <strong>01978763486</strong></p>
+  <p>📱 নগদ নম্বর: <strong>01978763486</strong></p>
 </section>
 
 <footer>
